@@ -30,7 +30,7 @@ RUN apt-get update && \
 RUN pyenv update && \
     pyenv install 3.6.0 && \
     pyenv global 3.6.0
-
+RUN  pip install --upgrade setuptools
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
